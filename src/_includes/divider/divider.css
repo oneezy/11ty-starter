@@ -1,0 +1,24 @@
+@layer components {
+  .divider {
+    pointer-events: none;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+  }
+  
+  .divider svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+    transform: rotateY(180deg);
+  }
+  
+  .divider svg path {
+    fill: #fff;
+  }
+}

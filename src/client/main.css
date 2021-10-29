@@ -1,0 +1,21 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import "../_includes/scroll/scroll.css";
+@import "../_includes/container/container.css";
+@import "../_includes/button/button.css";
+@import "../_includes/header/navigation/navigation.css";
+@import "../_includes/hero/hero.css";
+@import "../_includes/divider/divider.css";
+
+/* @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Indie+Flower&family=Major+Mono+Display&display=swap'); */
+
+@layer base {
+  body {
+    @apply flex flex-col min-h-screen;
+  }
+  main {
+    @apply flex-grow;
+  }
+}

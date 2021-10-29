@@ -1,0 +1,21 @@
+---
+title: 11ty + Vite + Tailwind Starter
+description: A JAMpacked starting point
+layout: base.njk
+heroTitle: 11ty + Vite
+heroDescription: This is a blank theme.
+heroBg: assets/images/pages/1.jpg
+pageType: page
+---
+
+{% include 'hero/hero.njk' %}
+
+{% for page in collections.pages %}
+<section id="{{ page.fileSlug }}" class="container my-20 prose lg:prose-xl">
+  <article class="flex flex-col items-start justify-center lg:h-[50vh]">
+    <h2>{{ page.data.title }}</h2>
+    <p>{{ page.data.description }}</p>
+    <a href="{{ page.fileSlug }}" class="button">Learn More</a>
+  </article>
+</section>
+{% endfor %}

@@ -1,0 +1,12 @@
+---
+layout: base.njk
+pageType: page
+---
+
+{% include 'hero/hero.njk' %}
+
+<section id="{{ page.fileSlug }}Section" class="container prose lg:prose-xl">
+  <article>
+    {{ content | safe }}
+  </article>
+</section>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include "head/head.njk" %}
+<body
+  {%- if page.fileSlug == "" %} id="home" class="{% if pageType %}{{ pageType }} {{ pageType }}-home{% endif -%} {{ pageClasses }}"
+  {%- else %} id="{{ page.fileSlug }}" class="{% if pageType %}{{ pageType }} {{ pageType }}-{{ page.fileSlug }}{% endif -%} {{ pageClasses }}"
+  {% endif %}>
+
+  {% include "header/header.njk" %}
+  <main id="main" class="mt-[-56px]">
+    {{ content | safe }}
+  </main>
+  {% include "footer/footer.njk" %}
+</body>
+</html>

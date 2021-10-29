@@ -1,0 +1,9 @@
+@layer components {
+  .hero .hero-title { 
+    @apply text-white leading-none m-0;
+  }
+  
+  .hero .hero-summary { 
+    @apply text-white opacity-50;
+  }
+}

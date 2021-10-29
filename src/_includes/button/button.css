@@ -1,0 +1,15 @@
+@layer components {
+  .button {
+    @apply 
+      bg-blue-600 
+      text-white 
+      leading-none 
+      px-6 
+      py-4 
+      rounded-3xl 
+      no-underline 
+      inline-flex 
+      items-center 
+      justify-center !important;
+  }
+}

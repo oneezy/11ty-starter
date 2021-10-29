@@ -1,0 +1,18 @@
+<nav class="flex items-center justify-center gap-4">
+  
+    {# Homepage #}
+    {% if page.fileSlug == "" %}
+        <a href="/" aria-current="page" class="active">Home</a>
+      {% for link in collections.pages %}
+        <a href="#{{ link.fileSlug }}">{{ link.data.title }}</a>
+      {% endfor %}
+  
+    {# Other Pages #}
+    {% else %}
+        <a href="/">Home</a>
+      {% for link in collections.pages %}
+        <a href="{{ link.url }}" {% if link.url == page.url %} aria-current="page" class="active"{% endif %}>{{ link.data.title }}</a>
+      {% endfor %}
+    {% endif %}
+  
+  </nav>

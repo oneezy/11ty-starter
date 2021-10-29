@@ -1,0 +1,9 @@
+@layer components {
+  header nav a {
+    @apply h-full relative flex items-center;
+  }
+  header nav a.active::after {
+    content: ""; bottom: unset !important; top: 100% !important; height: 3px;
+    @apply absolute w-full inset-0 bg-blue-500;
+  }
+}

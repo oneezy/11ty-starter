@@ -1,0 +1,45 @@
+{
+  "name": "eleventy-vite-tailwind-starter",
+  "version": "0.1.0",
+  "description": "A JAMpacked starting point",
+  "scripts": {
+    "clean": "rimraf dist",
+    "dev:vite": "vite",
+    "dev:eleventy": "eleventy --serve --quiet",
+    "build:vite": "vite build",
+    "build:eleventy": "eleventy",
+    "build": "cross-env ELEVENTY_ENV=prod run-s clean build:*",
+    "format": "prettier --write \"src/**/*.js\"",
+    "lint": "prettier --check \"src/**/*.js\"",
+    "dev": "cross-env ELEVENTY_ENV=dev run-p clean dev:*",
+    "prod": "cross-env ELEVENTY_ENV=prod npm run clean && npm run build && serve dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.2",
+    "@tailwindcss/typography": "^0.4.1",
+    "@vitejs/plugin-legacy": "^1.6.2",
+    "autoprefixer": "^10.3.7",
+    "cross-env": "^7.0.3",
+    "cssnano": "^5.0.8",
+    "html-minifier": "^4.0.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^9.0.1",
+    "postcss-import": "^14.0.2",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "^2.3.2",
+    "prismjs": "^1.24.1",
+    "rimraf": "^2.7.1",
+    "serve": "^12.0.0",
+    "tailwindcss": "^2.2.4",
+    "vite": "^2.3.8"
+  },
+  "dependencies": {
+    "@fontsource/abel": "^4.5.0",
+    "@mdi/font": "^6.4.95",
+    "alpinejs": "^3.2.3"
+  }
+}
