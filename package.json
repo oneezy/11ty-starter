@@ -1,5 +1,5 @@
 {
-  "name": "eleventy-vite-tailwind-starter",
+  "name": "11ty-starter",
   "version": "0.1.0",
   "description": "A JAMpacked starting point",
   "scripts": {
@@ -11,15 +11,27 @@
     "build": "cross-env ELEVENTY_ENV=prod run-s clean build:*",
     "format": "prettier --write \"src/**/*.js\"",
     "lint": "prettier --check \"src/**/*.js\"",
+    "start": "cross-env ELEVENTY_ENV=dev run-p clean dev:*",
     "dev": "cross-env ELEVENTY_ENV=dev run-p clean dev:*",
     "prod": "cross-env ELEVENTY_ENV=prod npm run clean && npm run build && serve dist"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "11ty",
+    "starter",
+    "11ty-starter",
+    "11ty-tailwind",
+    "11ty-tailwind-starter",
+    "11ty-vite",
+    "11ty-vite-starter",
+    "11ty-vite-tailwind"
+  ],
+  "author": "Justin O'Neill",
   "license": "MIT",
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy": "^1.0.0-beta.4",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.2",
+    "@tailwindcss/aspect-ratio": "^0.3.0",
+    "@tailwindcss/forms": "^0.3.4",
     "@tailwindcss/typography": "^0.4.1",
     "@vitejs/plugin-legacy": "^1.6.2",
     "autoprefixer": "^10.3.7",

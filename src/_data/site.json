@@ -1,8 +1,24 @@
 {
-  "name": "11ty + Vite + Tailwind Starter",
-  "url": "https://www.mywebsite.com",
-  "authorName": "Justin O'Neill",
-  "authorUrl": "https://oneezy.com",
-  "title": "Title",
-  "description": "This is my default website description"
+  "url": "https://oneezy.com",
+  "title": "11ty Starter",
+  "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos modi maxime nulla dolorum. Temporibus, obcaecati facilis cumque quia natus quas doloribus nemo eveniet assumenda dolorem dignissimos. Architecto quidem vitae optio.",
+  "keywords": "11ty, starter, 11ty-starter, 11ty-tailwind, 11ty-tailwind-starter, 11ty-vite, 11ty-vite-starter, 11ty-vite-tailwind",
+  "canonical": "https://oneezy.com",
+  "language": "en",
+  "locale": "en_us",
+  "feed": {
+    "subtitle": "I am writing about my experiences as a naval navel-gazer.",
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "id": "https://oneezy.com"
+  },
+  "jsonfeed": {
+    "path": "/feed/feed.json",
+    "url": "https://oneezy.com/feed/feed.json"
+  },
+  "author": {
+    "name": "Justin O'Neill",
+    "email": "hello@oneezy.com",
+    "url": "https://oneezy.com"
+  }
 }
