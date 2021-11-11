@@ -1,7 +1,11 @@
 // const Image = require("@11ty/eleventy-img");  // Uncomment if you need image optimisation. Istall '@11ty/eleventy-img' as dev
 // require("dotenv").config;  // Uncomment if you need .env variables. Install 'dotenv' package as dev
+const socialImages = require("@11tyrocks/eleventy-plugin-social-images");
 
 const markdownIt = require("markdown-it");
+
+const metagen = require('eleventy-plugin-metagen');
+
 
 module.exports = (config) => {
   const mdLibrary = markdownIt({ html: true }).disable("code");
@@ -10,6 +14,9 @@ module.exports = (config) => {
   config.addPassthroughCopy({ "src/static/fonts": "assets/fonts" });
   config.setLibrary("md", mdLibrary);
   config.addShortcode("year", () => `${new Date().getFullYear()}`);
+
+  config.addPlugin(socialImages);
+  config.addPlugin(metagen);
 
   // Uncomment if you need image optimisation
   // config.addAsyncShortcode("image", async (src, alt, sizes) => {

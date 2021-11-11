@@ -1,4 +1,5 @@
 {
+  "name": "Oneezy.com",
   "url": "https://oneezy.com",
   "title": "11ty Starter",
   "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos modi maxime nulla dolorum. Temporibus, obcaecati facilis cumque quia natus quas doloribus nemo eveniet assumenda dolorem dignissimos. Architecto quidem vitae optio.",
@@ -19,6 +20,18 @@
   "author": {
     "name": "Justin O'Neill",
     "email": "hello@oneezy.com",
-    "url": "https://oneezy.com"
+    "url": "https://oneezy.com",
+    "avatar": "https://avatars0.githubusercontent.com/u/1409898?s=460&v=4"
+  },
+  "img": {
+    "logo": "/assets/images/logo.png",
+    "icon": "/assets/images/icon.png",
+    "cover": "/assets/images/cover.png"
+  },
+  "social": {
+    "type": "website",
+    "card": "summary_large_image",
+    "username": "oneeezy",
+    "img": "/assets/images/social.png"
   }
 }

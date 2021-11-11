@@ -8,12 +8,14 @@
     "dev:eleventy": "eleventy --serve --quiet",
     "build:vite": "vite build",
     "build:eleventy": "eleventy",
-    "build": "cross-env ELEVENTY_ENV=prod run-s clean build:*",
+    "build": "cross-env ELEVENTY_ENV=prod run-s clean build:* social-images",
     "format": "prettier --write \"src/**/*.js\"",
     "lint": "prettier --check \"src/**/*.js\"",
     "start": "cross-env ELEVENTY_ENV=dev run-p clean dev:*",
     "dev": "cross-env ELEVENTY_ENV=dev run-p clean dev:*",
-    "prod": "cross-env ELEVENTY_ENV=prod npm run clean && npm run build && serve dist"
+    "prod": "cross-env ELEVENTY_ENV=prod npm run clean && npm run build && serve dist",
+    "social-images": "eleventy-social-images --outputDir dist --imageDir assets/images/previews --dataFile src/_social/social.json --templatePath src/_social/social.html",
+    "social-imagesss": "eleventy-social-images --outputDir dist --dataFile src/_social/social.json --templatePath src/_social/social.html --stylesPath src/_social/social.css --width 1280 --height 720 --deviceScaleFactor 1 --previewDir dist/assets/images/previews"
   },
   "keywords": [
     "11ty",
@@ -30,6 +32,7 @@
   "devDependencies": {
     "@11ty/eleventy": "^1.0.0-beta.4",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.2",
+    "@11tyrocks/eleventy-plugin-social-images": "^0.2.0",
     "@tailwindcss/aspect-ratio": "^0.3.0",
     "@tailwindcss/forms": "^0.3.4",
     "@tailwindcss/typography": "^0.4.1",
@@ -37,6 +40,7 @@
     "autoprefixer": "^10.3.7",
     "cross-env": "^7.0.3",
     "cssnano": "^5.0.8",
+    "eleventy-plugin-metagen": "^1.5.1",
     "html-minifier": "^4.0.0",
     "npm-run-all": "^4.1.5",
     "postcss-cli": "^9.0.1",

@@ -1,17 +1,26 @@
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% metagen
+  title=title + " | " + site.name or site.title + " | " + site.name,
+  desc=description or site.description,
+  url=site.url + page.url,
+  img=img or site.url + "/assets/images/previews/" + title | slugify + ".png",
+  img_alt=title or site.title,
+  twitter_card_type="summary_large_image",
+  twitter_handle=username or site.social.username,
+  name=author or site.author.name,
+  comments=true
+%}
 
-  {% if site.env == "prod" %}
-    <link rel="stylesheet" href="/assets/main.css">
-    <script type="module" src="/assets/main.js" defer></script>
-  {% endif %}
+<link rel="shortcut icon" href="/assets/images/favicon.ico">
 
-  {% if site.env == "dev" %}
-    <script type="module" src="http://localhost:3000/@vite/client"></script>
-    <script type="module" src="http://localhost:3000/src/client/main.js"></script>
-  {% endif %}
+{%- if site.env == "prod" %}
+<link rel="stylesheet" href="/assets/main.css">
+<script type="module" src="/assets/main.js" defer></script>
+{% endif %}
 
-  {% include "views/head/seo.njk" %}
+{%- if site.env == "dev" %}
+<script type="module" src="http://localhost:3000/@vite/client"></script>
+<script type="module" src="http://localhost:3000/src/client/main.js"></script>
+{% endif %}
+
 </head>
