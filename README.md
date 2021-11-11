@@ -1,13 +1,13 @@
 # Eleventy Tailwind with Vite
 
-This is a template (or demo) for integrating [Vite](https://vitejs.dev) with [Eleventy](https://www.11ty.dev/). This allows you to use Vite for bundling and Eleventy for building static pages. It uses [Tailwind](https://tailwindcss.com) for styling and [Alpine](https://github.com/alpinejs/alpine) for some Javascript magic.
-
-![screenshot](etav.png)
+This is a template (or demo) for integrating [Vite](https://vitejs.dev) with [Eleventy](https://www.11ty.dev/) and [Tailwind](https://tailwindcss.com). This allows you to use Vite for bundling and Eleventy for building static pages.
 
 ### Clone template
 
-In an empty folder run `npx degit adwinmbd/eleventy-tailwind-vite-template#main`
-
+In an empty folder run 
+```
+git clone https://github.com/oneezy/11ty-starter.git
+```
 ### Install:
 
 ```
@@ -18,6 +18,10 @@ npm install
 
 ```
 npm start
+```
+*or*
+```
+npm run dev
 ```
 
 Open [http://localhost:8080](http://localhost:8080) to view it in the browser
@@ -40,12 +44,9 @@ npm run lint
 npm run format
 ```
 
-### Todo
-
-- [ ] Make @hotwired/turbo play nice with the template
 
 ### References
-
+- [Adwin Mbidi](https://github.com/adwinmbd/eleventy-tailwind-vite-template) *(originally forked from*)
 - [Tailblocks](https://tailblocks.cc)
 - [Jake Ord](https://github.com/jorddy/eleventy-vite-sass)
 - [Stephanie Eckles](https://github.com/5t3ph/smol-11ty-starter)
