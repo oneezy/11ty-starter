@@ -1,7 +1,7 @@
 <div class="social-icons">
-{% for social, link in social.social %}
-  {% if link %}
-    <a href="{{ link }}" class="mdi mdi-{{ social }}" aria-label={{ social }} target="_blank"></a>
-  {% endif %}
-{% endfor %}
+{%- for social, link in social.social %}
+  {%- if link %}
+    <a href="{{ link }}" class="mdi mdi-{{ social }}" aria-label="{{ social }}" target="_blank"></a>
+  {%- endif %}
+{%- endfor %}
 </div>
