@@ -1,5 +1,5 @@
 {% for social, link in social.social %}
   {% if link %}
-    <a href="{{ link }}" class="mdi mdi-{{ social }}" target="_blank"></a>
+    <a href="{{ link }}" class="mdi mdi-{{ social }}" aria-label={{ social }} target="_blank"></a>
   {% endif %}
 {% endfor %}
