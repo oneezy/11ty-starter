@@ -1,3 +1,5 @@
-{% for item in social.social %}
-  {{ item }}
+{% for social, link in social.social %}
+  {% if link %}
+    <a href="{{ link }}" class="mdi mdi-{{ social }}" target="_blank"></a>
+  {% endif %}
 {% endfor %}

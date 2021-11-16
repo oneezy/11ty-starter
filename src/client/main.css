@@ -1,3 +1,5 @@
+@import "https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css";
+
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
@@ -13,7 +15,7 @@
 
 @layer base {
   body {
-    @apply flex flex-col min-h-screen;
+    @apply flex flex-col min-h-screen overflow-x-hidden;
   }
   main {
     @apply flex-grow;
