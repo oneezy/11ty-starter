@@ -2,4 +2,4 @@
 src/client/*.js
 src/client/*.css
 src/_generated
-src/_social
+src/_opengraph

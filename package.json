@@ -14,8 +14,8 @@
     "start": "cross-env ELEVENTY_ENV=dev run-p clean dev:*",
     "dev": "cross-env ELEVENTY_ENV=dev run-p clean dev:*",
     "prod": "cross-env ELEVENTY_ENV=prod npm run clean && npm run build && serve dist",
-    "social-images": "eleventy-social-images --outputDir dist --imageDir assets/images/previews --dataFile src/_social/social.json --templatePath src/_social/social.html",
-    "social-imagesss": "eleventy-social-images --outputDir dist --dataFile src/_social/social.json --templatePath src/_social/social.html --stylesPath src/_social/social.css --width 1280 --height 720 --deviceScaleFactor 1 --previewDir dist/assets/images/previews"
+    "social-images": "eleventy-social-images --outputDir dist --imageDir assets/images/previews --dataFile src/_opengraph/opengraph.json --templatePath src/_opengraph/opengraph.html",
+    "social-imagesss": "eleventy-social-images --outputDir dist --dataFile src/_opengraph/opengraph.json --templatePath src/_opengraph/opengraph.html --stylesPath src/_opengraph/opengraph.css --width 1280 --height 720 --deviceScaleFactor 1 --previewDir dist/assets/images/previews"
   },
   "keywords": [
     "11ty",

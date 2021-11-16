@@ -1,13 +1,13 @@
 ---
-permalink: "./src/_social/social.json"
+permalink: "./src/_opengraph/opengraph.json"
 permalinkBypassOutputDir: true
 eleventyExcludeFromCollections: true
 ---
 [
-{%- for social in collections.all %}
+{%- for opengraph in collections.all %}
   {
-      "title":"{{ social.data.title | safe }}",
-      "imgName":"{{ social.data.title | slugify }}"
+      "title":"{{ opengraph.data.title | safe }}",
+      "imgName":"{{ opengraph.data.title | slugify }}"
   }{% if loop.last == false %},{% endif -%}
 {% endfor %}
 ]
