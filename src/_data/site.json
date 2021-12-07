@@ -17,6 +17,18 @@
     "path": "/feed/feed.json",
     "url": "https://oneezy.com/feed/feed.json"
   },
+  "company": {
+    "website": "",
+    "logo": "",
+    "icon": "",
+    "email": "",
+    "phone": "",
+    "address": "",
+    "city": "",
+    "state": "",
+    "country": "",
+    "zip": ""
+  },
   "author": {
     "name": "Justin O'Neill",
     "email": "hello@oneezy.com",
