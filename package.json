@@ -1,6 +1,6 @@
 {
   "name": "11ty-starter",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A JAMpacked starting point",
   "scripts": {
     "clean": "rimraf dist",
@@ -8,7 +8,7 @@
     "dev:eleventy": "eleventy --serve --quiet",
     "build:vite": "vite build",
     "build:eleventy": "eleventy",
-    "build": "cross-env ELEVENTY_ENV=prod run-s clean build:* social-images",
+    "build": "cross-env ELEVENTY_ENV=prod run-s clean build:*",
     "format": "prettier --write \"src/**/*.js\"",
     "lint": "prettier --check \"src/**/*.js\"",
     "start": "cross-env ELEVENTY_ENV=dev run-p clean dev:*",
