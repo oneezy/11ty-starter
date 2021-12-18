@@ -1,6 +1,6 @@
 # Eleventy Tailwind with Vite
 
-This is a template (or demo) for integrating [Vite](https://vitejs.dev) with [Eleventy](https://www.11ty.dev/) and [Tailwind](https://tailwindcss.com). This allows you to use Vite for bundling and Eleventy for building static pages.
+This is a [template](https://xenodochial-jennings-19cdff.netlify.app/) (or [demo](https://xenodochial-jennings-19cdff.netlify.app/)) for integrating [Vite](https://vitejs.dev) with [Eleventy](https://www.11ty.dev/) and [Tailwind](https://tailwindcss.com). This allows you to use Vite for bundling and Eleventy for building static pages.
 
 ![image](https://user-images.githubusercontent.com/7369575/146655479-92411e46-1c96-4fb8-aaf0-db6cac405265.png)
 
