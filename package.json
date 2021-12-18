@@ -1,6 +1,6 @@
 {
   "name": "11ty-starter",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A JAMpacked starting point",
   "scripts": {
     "clean": "rimraf dist",
